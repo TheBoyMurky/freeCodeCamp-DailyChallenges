@@ -6,7 +6,7 @@ import (
 )
 
 func emailValidator(email string) bool {
-	r, _ := regexp.Compile("^[^.].+[^.]@(\\w+\\.)+\\w\\w+")
+	r, _ := regexp.Compile(`^[^.].+[^.]@(\w+\\.)+\w\w+"`)
 	return r.MatchString(email)
 }
 

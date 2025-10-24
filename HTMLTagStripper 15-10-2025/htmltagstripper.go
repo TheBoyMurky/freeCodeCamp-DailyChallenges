@@ -6,7 +6,7 @@ import (
 )
 
 func stripTags(html string) string {
-	r, _ := regexp.Compile("</?([^<]+)>")
+	r, _ := regexp.Compile(`</?([^<]+)>`)
 	strippedTag := r.ReplaceAllString(html, "")
 	return strippedTag
 }
