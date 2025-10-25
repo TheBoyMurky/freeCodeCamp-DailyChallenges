@@ -14,6 +14,6 @@ func main() {
 	fmt.Println(emailValidator("avalid@email.com"))
 	fmt.Println(emailValidator(".notavalid@email.com"))
 	fmt.Println(emailValidator("alsonotavalid@email.c"))
-	fmt.Println(emailValidator("some-valid@email.gov.co"))
+	fmt.Println(emailValidator("so_me-valid@email.gov.co"))
 	fmt.Println(emailValidator("another/notvalid@email.oc"))
 }
